@@ -10,16 +10,24 @@ This document summarizes information relevant to OpenMetadata committers and con
 [coding-style.md](coding-style.md)
 {% endcontent-ref %}
 
-{% content-ref url="build-code-run-tests.md" %}
-[build-code-run-tests.md](build-code-run-tests.md)
-{% endcontent-ref %}
-
 {% content-ref url="build-a-connector/" %}
 [build-a-connector](build-a-connector/)
 {% endcontent-ref %}
 
+{% content-ref url="build-and-run-docker.md" %}
+[build-and-run-docker.md](build-and-run-docker.md)
+{% endcontent-ref %}
+
+{% content-ref url="build-code-run-tests.md" %}
+[build-code-run-tests.md](build-code-run-tests.md)
+{% endcontent-ref %}
+
 {% content-ref url="run-integration-tests.md" %}
 [run-integration-tests.md](run-integration-tests.md)
+{% endcontent-ref %}
+
+{% content-ref url="run-manually.md" %}
+[run-manually.md](run-manually.md)
 {% endcontent-ref %}
 
 {% content-ref url="ux-style-guide.md" %}
