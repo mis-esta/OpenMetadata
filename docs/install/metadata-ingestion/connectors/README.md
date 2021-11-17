@@ -7,9 +7,7 @@ OpenMetadata supports connectors to some popular services. We will continue as a
 * [Athena](../../../openmetadata/connectors/athena.md)
 * [BigQuery](../../../openmetadata/connectors/bigquery.md)
 * [BigQuery Usage](../../../openmetadata/connectors/bigquery-usage.md)
-* Data Modeling
-  * [DBT](../../../connectors/data-modeling/dbt.md)
-  * [MariaDB](../../../connectors/data-modeling/mariadb.md)
+* [MariaDB](../../../connectors/mariadb.md)
 * [ElasticSearch](../../../openmetadata/connectors/elastic-search.md)
 * [MSSQL](../../../openmetadata/connectors/mssql.md)
 * [MySQL](../../../openmetadata/connectors/mysql.md)
@@ -25,6 +23,12 @@ OpenMetadata supports connectors to some popular services. We will continue as a
 * [Snowflake Usage](../../../openmetadata/connectors/snowflake-usage.md)
 * [Trino](../../../openmetadata/connectors/trino.md)
 * [Vertica](../../../openmetadata/connectors/vertica.md)
+
+
+
+#### Data Modeling
+
+* [DBT](../../../connectors/dbt.md)
 
 #### Dashboard Services
 
