@@ -41,26 +41,6 @@ Open [http://localhost:8585](http://localhost:8585) in your browser
 
 Airflow UI available at [http://localhost:8080](http://localhost)
 
-## Run Docker (Local Server)
-
-{% hint style="info" %}
-This Docker will enable users to access the Local OpenMetadata Server and Ingestion.
-
-**Prerequisites**
-
-* Docker >= 20.10.x
-* Minimum allocated memory to Docker >= 4GB (Preferences -> Advanced -> Resources)
-{% endhint %}
-
-Run the below script to create the latest Maven build of the local and run the Docker with the respective Maven build and Ingestion.
-
-```
-#Run Script to initialize Maven Build and start building Docker
-git clone https://github.com/open-metadata/OpenMetadata
-cd OpenMetadata
-./docker/run_local_docker.sh
-```
-
 ## Run Manually
 
 {% hint style="success" %}
@@ -80,14 +60,14 @@ OpenMetadata is built using Java, DropWizard, Jetty, and MySQL.
 
 {% tabs %}
 {% tab title="Download the release" %}
-Download the latest binary release from [OpenMetadata](https://github.com/open-metadata/OpenMetadata/releases/download/0.5.0/openmetadata-0.5.0.tar.gz), Once you have the tar file,
+Download the latest binary release from [OpenMetadata](https://github.com/open-metadata/OpenMetadata/releases/download/0.6.0/openmetadata-0.6.0.tar.gz), Once you have the tar file,
 
 ```bash
 # untar it
-tar -zxvf openmetadata-0.5.0.tar.gz
+tar -zxvf openmetadata-0.6.0.tar.gz
 
 # navigate to directory containing the launcher scripts
-cd openmetadata-0.5.0
+cd openmetadata-0.6.0
 ```
 {% endtab %}
 {% endtabs %}
@@ -120,13 +100,13 @@ cd openmetadata-0.5.0
 2.  Run bootstrap scripts to initialize the database and tables
 
     ```
-       cd openmetadata-0.5.0
+       cd openmetadata-0.6.0
        ./bootstrap/bootstrap_storage.sh migrate
     ```
 3.  Start the OpenMetadata Server
 
     ```
-       cd openmetadata-0.5.0 
+       cd openmetadata-0.6.0 
        ./bin/openmetadata.sh start
     ```
 
