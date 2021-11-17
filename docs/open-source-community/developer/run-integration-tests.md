@@ -7,20 +7,20 @@ Make sure OpenMetadata is up and running. Refer to instructions [building and ru
 ## Run MySQL test
 
 Run the following commands from the top-level directory
-```text
+
+```
 python3 -m venv /tmp/venv
 source /tmp/venv/bin/activate
 pip install -r ingestion/requirements.txt
 pip install -e ingestion
-pip install pytest
-pip install pytest-docker
+pip install pytest pytest-docker
 cd ingestion/tests/integration/mysql
 pytest -s -c /dev/null
 ```
 
 ## Run MsSQL test
 
-```text
+```
 cd ingestion
 source env/bin/activate
 cd tests/integration/mssql
@@ -29,7 +29,7 @@ pytest -s -c /dev/null
 
 ## Run Postgres test
 
-```text
+```
 cd ingestion
 source env/bin/activate
 cd tests/integration/postgres
@@ -38,28 +38,24 @@ pytest -s -c /dev/null
 
 ## Run LDAP test
 
-```text
+```
 python3 -m venv /tmp/venv
 source /tmp/venv/bin/activate
 pip install -r ingestion/requirements.txt
 pip install -e ingestion
-pip install pytest
-pip install pytest-docker
+pip install pytest pytest-docker
 cd ingestion/tests/integration/ldap
 pytest -s -c /dev/null
 ```
 
 ## Run Hive test
 
-```text
+```
 python3 -m venv /tmp/venv
 source /tmp/venv/bin/activate
 pip install -r ingestion/requirements.txt
 pip install -e ingestion
-pip install pytest
-pip install pytest-docker
-pip install pyhive thrift sasl thrift_sasl
+pip install pytest pytest-docker pyhive thrift sasl thrift_sasl
 cd ingestion/tests/integration/hive
 pytest -s -c /dev/null
 ```
-
