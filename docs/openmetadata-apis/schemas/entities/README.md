@@ -44,6 +44,10 @@ OpenMetadata has the following high-level core entities and relationships:
 [messagingservice.md](messagingservice.md)
 {% endcontent-ref %}
 
+{% content-ref url="thread.md" %}
+[thread.md](thread.md)
+{% endcontent-ref %}
+
 {% content-ref url="metrics.md" %}
 [metrics.md](metrics.md)
 {% endcontent-ref %}
@@ -82,10 +86,6 @@ OpenMetadata has the following high-level core entities and relationships:
 
 {% content-ref url="team.md" %}
 [team.md](team.md)
-{% endcontent-ref %}
-
-{% content-ref url="thread.md" %}
-[thread.md](thread.md)
 {% endcontent-ref %}
 
 {% content-ref url="topic.md" %}

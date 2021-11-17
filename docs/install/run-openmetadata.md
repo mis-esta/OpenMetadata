@@ -45,4 +45,8 @@ To access the OpenMetadata
 
 Open [http://localhost:8585](http://localhost:8585) in your browser
 
-Airflow UI available at [http://localhost:8080](http://localhost)
+Airflow UI available at [http://localhost:8080](http://localhost:8080)
+
+<mark style="color:purple;">(</mark><mark style="color:purple;">**username**</mark><mark style="color:purple;">: admin,</mark> <mark style="color:purple;">**password**</mark><mark style="color:purple;">: admin)</mark>
+
+&#x20;

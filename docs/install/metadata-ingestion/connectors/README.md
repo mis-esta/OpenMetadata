@@ -8,8 +8,8 @@ OpenMetadata supports connectors to some popular services. We will continue as a
 * [BigQuery](../../../openmetadata/connectors/bigquery.md)
 * [BigQuery Usage](../../../openmetadata/connectors/bigquery-usage.md)
 * Data Modeling
-  * DBT
-  * MariaDB
+  * [DBT](../../../connectors/data-modeling/dbt.md)
+  * [MariaDB](../../../connectors/data-modeling/mariadb.md)
 * [ElasticSearch](../../../openmetadata/connectors/elastic-search.md)
 * [MSSQL](../../../openmetadata/connectors/mssql.md)
 * [MySQL](../../../openmetadata/connectors/mysql.md)
