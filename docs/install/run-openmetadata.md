@@ -18,7 +18,7 @@ description: >-
 {% endhint %}
 
 ```bash
-pip install 'openmetadata-ingestion[docker]'
+python3 -m pip install 'openmetadata-ingestion[docker]'
 metadata docker --start
 ```
 
