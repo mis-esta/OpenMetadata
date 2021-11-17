@@ -18,14 +18,20 @@ description: >-
 {% endhint %}
 
 ```bash
-git clone https://github.com/open-metadata/OpenMetadata
-cd OpenMetadata/docker/metadata
-docker-compose up
+pip install 'openmetadata-ingestion[docker]'
+metadata docker --start
 ```
+
+{% hint style="info" %}
+**Note:**
+
+* To stop the Docker containers: <mark style="color:orange;">`metadata docker --stop`</mark>
+* To clean/prune the containers, volumes, and networks: <mark style="color:orange;">`metadata docker --clean`</mark>
+{% endhint %}
 
 ### Next Steps
 
-1. Docker for OpenMetadata will depend on Mysql Container to be up, It may take few seconds to run.
+1. Docker for OpenMetadata will depend on Mysql Container to be up, It may take a few seconds to run.
 2. Once OpenMetadata UI is accessible, Go to [Airflow UI](http://localhost:8080) to invoke the pipelines to ingest data.
 
 The above command brings up all the necessary services
