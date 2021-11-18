@@ -15,7 +15,15 @@ Please ensure your host system meets the requirements listed below. Then continu
 To check what version of Python you have, please use the following command.
 
 ```
-python --version
+python3 --version
+```
+
+### pip (version 19.2.3 or greater)
+
+The version of pip (pip3) that ships with Python 3.8.x is 19.2.3. You will need this version or later to install OpenMetadata. You can check what version of pip you have by running the following command.
+
+```
+pip3 --version
 ```
 
 ### Docker (version 20.10.0 or greater)
@@ -182,5 +190,23 @@ You should see a page similar to the following as the landing page for the OpenM
 1. Visit the [Features](../features.md) overview page and explore the OpenMetadata UI.
 2. Visit the [Connectors](metadata-ingestion/connectors/) documentation to see what services you can integrate with OpenMetadata.
 3. Visit the [API](../openmetadata-apis/apis/overview.md) documentation and explore the OpenMetadata APIs.
+
+### Troubleshooting
+
+#### Could not find a version that satisfied the requirement
+
+```
+pip3 install 'openmetadata-ingestion[docker]'
+ERROR: Could not find a version that satisfies the requirement openmetadata-ingestion[docker] (from versions: none)
+ERROR: No matching distribution found for openmetadata-ingestion[docker]
+```
+
+If you see the above when attempting to install OpenMetadata, this can be due to using older version of Python and pip. Please check the [Requirements](run-openmetadata.md#requirements) section above and confirm that you have supported versions installed.&#x20;
+
+
+
+If you need support please get in touch on Slack: [https://slack.open-metadata.org/](https://slack.open-metadata.org).&#x20;
+
+
 
 &#x20;
