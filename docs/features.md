@@ -82,9 +82,13 @@ Integrate your database, dashboard, messaging, and pipeline services with OpenMe
 
 See the [Connectors](install/metadata-ingestion/connectors/) documentation for information on available connectors and how to integrate your services with OpenMetadata.
 
-### Metadata Versioning
+### Metadata Versioning & Events API
 
-Starting in 0.6, OpenMetadata captures changes in both technical metadata (e.g., table schemas) and business metadata (e.g., tags, ownership, descriptions) as new versions of an entity. OpenMetadata maintains the version history for all entities in the Major.Minor number, starting with 0.1 as the initial version of an entity.&#x20;
+Starting in 0.6, OpenMetadata captures changes in both technical metadata (e.g., table schemas) and business metadata (e.g., tags, ownership, descriptions) as new versions of an entity. Metadata changes generate events that indicates which entity changed, who changed it, and how it changed. You may use these events to integrate metadata into other tools or trigger actions.&#x20;
+
+#### Metadata Versioning
+
+OpenMetadata maintains the version history for all entities using a number with the format _major.minor_, starting with 0.1 as the initial version of an entity.&#x20;
 
 Changes in metadata result in version changes as follows:
 
@@ -96,6 +100,10 @@ Metadata versioning helps **simplify debugging processes**. View the version his
 Versioning also helps in **broader collaboration** among consumers and producers of data. Admins can provide access to more users in the organization to change certain fields. Crowdsourcing makes metadata the collective responsibility of the entire organization.
 
 ![](<.gitbook/assets/versioning-wrapping-text.2021-11-17 16\_29\_01.gif>)
+
+#### Events API
+
+Starting in the 0.6 release, OpenMetadata captures changes in both technical metadata (e.g., table schemas) and business metadata (e.g., tags, ownership, descriptions) as change events. This lays the groundwork for notifications. In an upcoming release we will add support for push based events, enabling applications to register webhooks to be notified of change events. We will also enable users to subscribe to notifications and alerts for assets of interest. &#x20;
 
 ### One-Click Ingestion Pipelines
 
